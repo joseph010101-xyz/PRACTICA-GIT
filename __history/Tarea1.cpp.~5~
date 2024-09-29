@@ -1,0 +1,96 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+#include "VCL.h"
+#include "Tarea1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+CNatural::CNatural(){
+	n=0;
+}
+void CNatural::SetN(int _n){
+	n=_n;
+}
+int CNatural::GetN(){
+	return n;
+}
+String CNatural::Ejercicio1(){
+	String s=0;
+	for (int i=1; i <=n; i++) {
+		if (i<=n) {
+			s+=",";
+		}
+		s+=i;
+	}
+	return s;
+}
+String CNatural::Ejercicio2(){
+	String s=0;
+	if (n>=0) {
+
+		for (int i=1; i <=n; i++) {
+			if (i<=n) {
+				s+=",";
+			}
+			s+=i;
+		}
+	}else{
+		ShowMessage("el numero ingresado no es numero natural");
+	}
+	return s;
+}
+int CNatural::Ejercicio3(){
+	int x=0;
+	for (int i=0; i <= n; i++) {
+		 x=x+i;
+	}
+	return x;
+}
+String CNatural::Ejercicio4(){
+	char alfabeto[]="abcdefghijklmnopqrstuwxyz";
+	String acumulador;
+		if (n>=0 and n<=25) {
+			for (int i = 0; i <= n; i++) {
+				acumulador += alfabeto[i];
+				if (i < n) {
+					acumulador += ", ";
+				}
+			}
+		}
+return acumulador;
+}
+String CNatural::Ejercicio5(){
+   String x;
+   int c=0;int z=1;
+   int i=0;int s=0;
+   if ( n%2 ==0){
+	  while (i<n){
+		x+=",";
+		x+=c;
+		c=c+2;
+		i++;
+	  }
+   }else{
+	  while(i<n ){
+		x+=",";
+		x+=z;
+		z=z+2;
+		i++;
+	  }
+   }
+   return x;
+}
+int Ejercicio6(int x, int m){
+	int acumulador = m;
+	for (int i = 1; i < x; i++) {
+		m = m + acumulador;
+	}
+		return m;
+}
+
+
+
+
+
+
+

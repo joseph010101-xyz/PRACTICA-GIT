@@ -1,0 +1,109 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 442
+  ClientWidth = 628
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Menu = MainMenu1
+  TextHeight = 15
+  object Label1: TLabel
+    Left = 56
+    Top = 48
+    Width = 115
+    Height = 15
+    Caption = 'INGRESA EL NUMERO'
+  end
+  object Label2: TLabel
+    Left = 288
+    Top = 48
+    Width = 62
+    Height = 15
+    Caption = 'RESULTADO'
+  end
+  object Button1: TButton
+    Left = 56
+    Top = 128
+    Width = 75
+    Height = 25
+    Caption = 'SetN'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 152
+    Top = 128
+    Width = 75
+    Height = 25
+    Caption = 'GetN'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object EResultado: TEdit
+    Left = 56
+    Top = 80
+    Width = 145
+    Height = 23
+    TabOrder = 2
+  end
+  object E_resultado: TEdit
+    Left = 288
+    Top = 80
+    Width = 169
+    Height = 23
+    TabOrder = 3
+  end
+  object Edit1: TEdit
+    Left = 48
+    Top = 304
+    Width = 57
+    Height = 23
+    TabOrder = 4
+  end
+  object Edit2: TEdit
+    Left = 131
+    Top = 304
+    Width = 54
+    Height = 23
+    TabOrder = 5
+  end
+  object MainMenu1: TMainMenu
+    Left = 304
+    Top = 224
+    object FUNCIONES1: TMenuItem
+      Caption = 'FUNCIONES'
+      object EJERCICIO31: TMenuItem
+        Caption = 'EJERCICIO 3'
+        OnClick = EJERCICIO31Click
+      end
+      object EJERCICIO41: TMenuItem
+        Caption = 'EJERCICIO 4'
+        OnClick = EJERCICIO41Click
+      end
+      object EJERCICIO61: TMenuItem
+        Caption = 'EJERCICIO 6'
+        OnClick = EJERCICIO61Click
+      end
+    end
+    object PROCEDIMIENTOS1: TMenuItem
+      Caption = 'PROCEDIMIENTOS'
+      object EJERCICIO11: TMenuItem
+        Caption = 'EJERCICIO 1'
+        OnClick = EJERCICIO11Click
+      end
+      object EJERCICIO21: TMenuItem
+        Caption = 'EJERCICIO 2'
+        OnClick = EJERCICIO21Click
+      end
+      object EJERCICIO51: TMenuItem
+        Caption = 'EJERCICIO 5'
+        OnClick = EJERCICIO51Click
+      end
+    end
+  end
+end

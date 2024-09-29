@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+#include "VCL.h"
+#include "Tarea1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+CNatural::CNatural(){
+	n=0;
+}
+void CNatural::SetN(int _n){
+	n=_n;
+}
+int CNatural::GetN(){
+	return n;
+}
+void CNatural::Ejercicio1(){
+	int s=0;
+	for (int i=0; i <=n; i++) {
+		return s;
+		s=s+i;
+	}
+
+}

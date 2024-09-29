@@ -1,0 +1,56 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+#include "VCL.h"
+#include "Tarea1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+CNatural::CNatural(){
+	n=0;
+}
+void CNatural::SetN(int _n){
+	n=_n;
+}
+int CNatural::GetN(){
+	return n;
+}
+String CNatural::Ejercicio1(){
+	String s=0;
+	for (int i=1; i <=n; i++) {
+		if (i<=n) {
+			s+=",";
+		}
+		s+=i;
+	}
+	return s;
+}
+String CNatural::Ejercicio2(){
+	String s=0;
+	if (n>=0) {
+
+		for (int i=1; i <=n; i++) {
+			if (i<=n) {
+				s+=",";
+			}
+			s+=i;
+		}
+	}else{
+		ShowMessage("el numero ingresado no es numero natural");
+	}
+	return s;
+}
+int CNatural::Ejercicio3(){
+	int x=0;
+	for (int i=0; i <= n; i++) {
+		 x=x+i;
+	}
+	return x;
+}
+int CNatural::Ejercicio4{
+
+}
+
+
+
+
+

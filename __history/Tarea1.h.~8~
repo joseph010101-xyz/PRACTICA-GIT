@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#ifndef Tarea1H
+#define Tarea1H
+//---------------------------------------------------------------------------
+class CNatural{
+	private:
+		int n;
+	public:
+		CNatural();
+		void SetN(int _n);
+		int GetN();
+		String Ejercicio1();
+		String Ejercicio2();
+		int Ejercicio3();
+		String Ejercicio4();
+		String Ejercicio5();
+		int Ejercicio6(int dig1, int dig2);
+		int Ejercicio7(int dig1, int dig2);
+		int Ejercicio8(int dig1,int dig2);
+		int Ejercicio9(int dig1, int dig2);
+        int Ejercicio10(int dig1,int dig2);
+};
+#endif
